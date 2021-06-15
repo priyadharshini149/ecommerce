@@ -233,6 +233,12 @@ right:80px;
     width: 380px;
     height: 300px;
 }
+
+
+
+#footer{
+    color:white;
+}
 @media(max-width:991px){
     .main .main_video video
     {
