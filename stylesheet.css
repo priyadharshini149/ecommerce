@@ -1,0 +1,255 @@
+body{
+   
+    background-image: url("image/black.jpg");
+    background-attachment: fixed;
+    
+}
+
+
+.logo
+{
+    display: flex;
+    width: 60%;
+    float:left;
+}
+.logo div{
+    flex-wrap: wrap;
+}
+.logo span{
+    font-family:cursive;
+    font-weight: bolder;
+    color: black;
+}
+.nav{
+    background-image: linear-gradient(60deg,#992121,#502d13,#992121);
+    z-index: 9;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right:50px;
+    display: flex;
+    box-shadow:0px 3px 65px 0px rgba(2, 2, 2, 0.568);
+}
+.nav_top{
+    position: fixed;
+    top:0;
+    right: 0;
+    left:0;
+}
+.logo img{
+    padding: 10px;
+    
+}
+.nav_side{
+    float:right;
+    width: 40%;
+    padding-top:23px;
+}
+.nav_side a{
+    text-decoration: none;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    font-family: cosmic,sans-serif;
+}
+.nav_side a:hover{
+    color:white;
+    font-weight:bold;
+    transition: all 1s ease;
+}
+.main
+{
+  height: 100hv;
+ 
+   margin-top: 100px;
+   padding: 230px;
+  
+   background-image: url('image/main3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+background-attachment: fixed;
+background-position: center;
+
+}
+.main h1
+{
+    text-align: left;
+    color:#ffffff;
+    font-weight: bolder;
+    font-family: cosmic,sans-serif;
+    font-size: 45px;
+    
+    
+}
+#about{
+    background-color: rgba(0, 0, 0, 0.342); 
+    text-align: left;
+    color:white,black;
+    font-weight: bolder;
+    font-family: cosmic,sans-serif;
+    font-size: 25px;
+    margin-top: 50px;
+  padding: 230px;
+   
+
+}
+#about .multi
+{
+    background-image: linear-gradient(60deg,#992121,#502d13,#992121);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip:text;
+    color: transparent;
+}
+.main a{
+    background-color: #992121;
+    color: #502d13;
+    padding:10px;
+    font-weight: bolder;
+    font-family: cosmic,sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+.main a:hover{
+    color: #992121;
+    background-color: #502d13;
+    border: none;
+    text-decoration: none;
+}
+
+.main .main_video{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index:10000;
+    background-color: rgba(0, 0, 0, 0.719);
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+.main_video.active{
+    visibility: visible;
+    opacity: 1;
+}
+.main .main_video video{
+    position: relative;
+    max-width:900px;
+    outline: none;
+
+
+}
+.close
+{
+    position: absolute;
+  top: 30px;
+right:80px;
+    
+    cursor:pointer;
+    max-width: 40px;
+    filter: blur(0.5);
+}
+
+#products{
+    background-image: linear-gradient(60deg,#502d1396,#9921219d,#502d1396);
+    
+    
+    font-size: 25px;
+    margin-top: 50px;
+    padding: 10px;
+    margin-bottom:40px;
+    text-align: center;
+   
+}
+
+#products h1{
+
+    color:black;
+    font-weight: bolder;
+    font-family: cosmic,sans-serif;
+    padding: 10px;
+
+}
+#products .container
+{
+    display: flex;
+    padding: 10px;
+    
+    margin-left: 80px;
+   width: 100%;
+   
+}
+#products .container a{
+    text-decoration: none;
+}
+.carousel1{
+
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 10px;
+    margin-right: 10px;
+    flex-basis: 100%;
+    width: 100%;
+    height: 100hv;
+    position: relative;
+    border: 2px solid #992121;
+ overflow: hidden;
+ box-shadow:0px 3px 65px 0px rgba(2, 2, 2, 0.89);
+}
+.carousel1:hover{
+    transform:translateY(-10px);
+    cursor: pointer;
+}
+.carousel1 h1{
+    color:#992121;
+    font-weight: bolder;
+    font-family: cosmic,sans-serif;
+    padding: 10px;
+}
+.carousel1 p{
+    color: white;
+    font-weight: bold;
+    font-family: cosmic,sans-serif;
+    font-size: medium;
+    margin-top: 10px;
+}
+.carousel
+{
+    height: 300px;
+    width: 380px;
+    padding: 10px;
+}
+.carousel img
+{
+    width: 380px;
+    height: 300px;
+}
+@media(max-width:991px){
+    .main .main_video video
+    {
+        max-width: 90%;
+    }
+    .carousel
+{
+    width: 200px;
+    height:200px;
+    
+}
+    .carousel img
+{
+    width: 200px;
+    height:200px;
+}
+.carousel1{
+    flex-shrink: 50%;
+}
+}
