@@ -16,7 +16,7 @@
             <a href=""><img src='image/img1.png'width=50px></a>
             </div>
             <div>
-                <span>ECOMMERECE</span>
+                <span>TRENDY</span>
             </div>
             </div>
             
@@ -30,6 +30,103 @@
         </div>
 
     </nav>
-    </div>
+
+
+    <section class="product_details">
+        <div class='row'>
+            <div class="col1">
+                <div class="prod">
+                    <div class="small_img">
+                        <div class="img1">
+                            <img src='image/product 3/product3.jpeg' width=100% class="small-img">
+                            
+                        </div>
+                        <div class="img2">
+                            <img src='image/product 3/product3.2.jpeg' width=100% class="small-img">
+                            
+                        </div>
+                        <div class="img3">
+                            <img src='image/product 3/product3.3.jpeg' width=100% class="small-img">
+                            
+                        </div>
+                        </div>
+
+                    <img src='image/product 3/product3.jpeg' id='productmain'>
+
+
+                    <div class="col-2" style="width:30%">
+                        <p>Women top</p>
+                        <h3>West by East Navy Blue Rhinestone Cape Georgette Fabric Top 
+                            for Women, Cape Sleeves, Round Neck</h3>
+                        <p><span><strike>M.R.P.:	₹ 1,299.00</strike><br>
+                            Price:	₹ 849.00<br>
+                            You Save:	₹ 450.00 (35%)</span></p>
+                        <select>
+                            <option>Select Size </option>
+                            <option>XXL</option>
+                            <option>XXL</option>
+                            <option>Large</option>
+                            <option>Medium</option>
+                            <option>Small</option>
+                            <option></option>
+                        </select><br>
+                        <input type="number" placeholder="Quantity"><br>
+                        <a href="register.html" class="btn">Add To Cart</a>
+                        <h3>
+                            Product Details<i class="fa fa-indent"></i>
+                        </h3><br>
+                        <p>
+                            <ul type='square'>
+                                <li>Care Instructions: Hand Wash in cold water. Only warm iron.</li>
+                                <li>Fit Type: Regular Fit</li>
+                                   <li>Rhinestone Studded</li>
+                                   <li> Round Neck</li>
+                                  <li>West by East Navy Blue Rhinestone Cape Georgette fabric Top for Women, Cape sleeves, Round neck
+                                    Fabric: Georgette, Lining- Polyknit</li>
+                                   <li>BUYER BEWARE This Product is Manufactured and Sold Exclusively by "West by East" and <br>
+                                       we have not authorized any other Sellers to sell this product, hence we cannot Guarantee the <br>
+                                       Quality if purchased from any seller</li>
+                            </ul>
+
+                
+                        </p>
+                
+                 </div>
+                 </div>
+
+                    
+                </div>
+
+                
+                
+            
+
+        </div>
+
+
+
+        
+    </section>
+    
+
+    
+    
     </body>
+    <script >
+        var ProductImg=document.getElementById("productmain");
+var SmallImg=document.getElementsByClassName("small-img");
+SmallImg[0].onclick=function()
+{
+    ProductImg.src=SmallImg[0].src;
+}
+SmallImg[1].onclick=function()
+{
+    ProductImg.src=SmallImg[1].src;
+}
+SmallImg[2].onclick=function()
+{
+    ProductImg.src=SmallImg[2].src;
+}
+
+    </script>
 </html>

@@ -3,38 +3,50 @@
         <title>
             ecommerce website
         </title>
-        <link href='stylesheet.css' rel='stylesheet'>
+        <link href="stylesheet.css" rel='stylesheet'>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        
     </head>
     <body>
+        <nav class='nav nav_top'>
+            <div class="logo">
+                <div>
+                <a href=""><img src='image/img1.png'width=50px></a>
+                </div>
+                <div>
+                    <span>TRENDY</span>
+                </div>
+                </div>
+                
+            <div class='nav_side'>
+                <a href='#about'>About us</a>
+                <a href='services.html'>Services</a>
+                <a href='#blog'>Blogs</a>
+                <a href='contact.html'>Contact</a>
+                <a href='index.html'>back to home</a>
+    
+            </div>
+    
+        </nav>
         <div class='container1'>
             
-            <form name='register form' onsubmit="return validation()" method='POST'>
+            <form name='ecommerce'  method='POST' >
                 <h2>Register</h2>
                 <input type='text' name='name'  id='name' placeholder='name'><br>
-                <span style='color:red'id='nameerror'></span>
+                
+                    <span style='color:rgb(250, 250, 250)'id='nameerror' ></span>
+                  
+               
                 <input type='email' name='email' id='email' placeholder='email'><br>
-                <span style='color:red' id='emailerror'></span>
-                <input type='number' name='contact number' id='number' placeholder='number'><br>
-                <span style='color:red' id='numbererror'></span>
-                <select name='branch'>
-                    <option>Branch</option>
-                    <option>CSE</option>
-                    <option>ECE</option>
-                    <option>EEE</option>
-                    <option>IT</option>
-                    <option>MTS</option>
-                </select><br>
-                <select name='year'>
-                    <option>Year</option>
-                    <option>1st</option>
-                    <option>2nd</option>
-                    <option>3rd</option>
-                    <option>4th</option>
-                    
-                </select><br>
-                <input type='text' name='college name' placeholder='college name'><br>
+                <span style='color:rgb(255, 255, 255)' id='emailerror' data-bs-toggle="tooltip" ></span>
+                <input type='number' name='phone number' id='number' placeholder='number'><br>
+               <span style='color:rgb(255, 255, 255)' id='numbererror' data-bs-toggle="tooltip" ></span>
+               <input type='password' name='password' id='password' placeholder='password'><br>
+                
                 <button type='submit'>register</button>
                 <button type='reset'>refresh</button>
+                
 
             </form>
         </div>

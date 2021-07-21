@@ -16,7 +16,7 @@
             <a href=""><img src='image/img1.png'width=50px></a>
             </div>
             <div>
-                <span>ECOMMERECE</span>
+                <span>TRENDY</span>
             </div>
             </div>
             
@@ -30,6 +30,100 @@
         </div>
 
     </nav>
-    </div>
+
+
+    <section class="product_details">
+        <div class='row'>
+            <div class="col1">
+                <div class="prod">
+                    <div class="small_img">
+                        <div class="img1">
+                            <img src='image/product 6/product6.1.jpg' width=100% class="small-img">
+                            
+                        </div>
+                        <div class="img2">
+                            <img src='image/product 6/product6.2.jpg' width=100% class="small-img">
+                            
+                        </div>
+                        <div class="img3">
+                            <img src='image/product 6/product6.3.jpg' width=100% class="small-img">
+                            
+                        </div>
+                        </div>
+
+                    <img src='image/product 6/product6.1.jpg' id='productmain'>
+
+
+                    <div class="col-2" style="width:30%">
+                        <p>Women top</p>
+                        <h3>GOD BLESS Women's Top</h3>
+                        <p><span><strike>M.R.P.:	₹ 500</strike><br>
+                            Price:	₹399.00<br>
+                            You Save:	₹ 99</span></p>
+                        <select>
+                            <option>Select Size </option>
+                            <option>XXL</option>
+                            <option>XXL</option>
+                            <option>Large</option>
+                            <option>Medium</option>
+                            <option>Small</option>
+                            <option></option>
+                        </select><br>
+                        <input type="number" placeholder="Quantity"><br>
+                        <a href="register.html" class="btn">Add To Cart</a>
+                        <h3>
+                            Product Details<i class="fa fa-indent"></i>
+                        </h3><br>
+                        <p>
+                            <ul type='square'>
+                                <li>Care Instructions: Normal wash do not use bleach</li>
+                                    <li>Fit Type: Regular Fit</li>
+                                    <li>Wash Care: Normal Wash Do Not Use Bleach</li>
+                                    <li>Fabric Type: Rayon</li>
+                                   <li> Pattern name: Solid</li>
+                                    <li>Collar Style: Classic Collar;</li>
+                               
+                            </ul>
+
+                
+                        </p>
+                
+                 </div>
+                 </div>
+
+                    
+                </div>
+
+                
+                
+            
+
+        </div>
+
+
+
+        
+    </section>
+    
+
+    
+    
     </body>
+    <script >
+        var ProductImg=document.getElementById("productmain");
+var SmallImg=document.getElementsByClassName("small-img");
+SmallImg[0].onclick=function()
+{
+    ProductImg.src=SmallImg[0].src;
+}
+SmallImg[1].onclick=function()
+{
+    ProductImg.src=SmallImg[1].src;
+}
+SmallImg[2].onclick=function()
+{
+    ProductImg.src=SmallImg[2].src;
+}
+
+    </script>
 </html>
