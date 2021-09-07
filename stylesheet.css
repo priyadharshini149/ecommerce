@@ -1,6 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Rye&family=Syncopate&family=ZCOOL+KuaiLe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Luckiest+Guy&family=Rock+Salt&display=swap');
 body{
    
-    background-image: url("image/black1.jpg");
+    background-image: url("image/black.jpg");
     background-attachment: fixed;
     
 }
@@ -61,32 +67,10 @@ body{
     font-weight:bold;
     transition: all 1s ease;
 }
-#carouselExampleFade{
-    margin-top: 75px;
-   
-   width: 100%;
-   
-}
 
-.main h1
-{
-    text-align: left;
-    color:#ffffff;
-    font-weight: bolder;
-    font-family: cosmic,sans-serif;
-    font-size: 60px;
-    
-    
-}
-.main h1:hover{
-    background-image: linear-gradient(60deg,#d15a7c,#C70039);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip:text;
-    color: transparent;
-}
+
 #about{
-    background-color: rgba(0, 0, 0, 0.342); 
+    
     text-align: left;
     color:white,black;
     font-weight: bolder;
@@ -114,7 +98,7 @@ body{
    padding: 30px;
 }
 .view {
-    margin-top: 50px;
+   
     text-align: center;
 }
 .view a{
@@ -127,20 +111,18 @@ body{
     border-radius: 70px;
     cursor: pointer;
     border: none;
-   
+   margin-left: 20px;
     text-decoration: none;
-   
+  
     
 }
-.main{
-    margin-left: 0px;
-    background-color: rgba(0, 0, 0, 0.219);
-}
+
 .main a:hover{
     color: #C70039;
-    background-color: #d15a7c;
+    background-color: #e1f33c;
     border: none;
     text-decoration: none;
+    
 }
 
 .main .main_video{
@@ -184,40 +166,56 @@ right:80px;
 #products{
   
     
-    background-color: rgba(0, 0, 0, 0.342);
+    
     font-size: 25px;
-    margin-top: 50px;
-    padding: 5px;
-    margin-bottom:40px;
+
+   padding: 2px;
     text-align: center;
+    margin-top: 100px;  
    
 }
 
 #products h1{
 
-    background-image: linear-gradient(60deg,#f51f1f,#f59b9b);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip:text;
+  
     color: transparent;
     font-weight: bolder;
-    font-family: cosmic,sans-serif;
+    font-family: 'Rye', cursive;
     text-align: center;
     animation-name: example;
     animation-duration: 1s;
     animation-iteration-count: infinite;
+         color: rgb(248, 231, 77);     
+    display: block;
+    text-shadow: 
+      0 0 10px rgba(255, 123, 0, 0.979),
+      0 0 4px rgb(255, 196, 0),
+      0 0 0px orange,
+      0 0 0px darkred;
+   
+    filter: saturate(100%);
+    animation: flicker steps(100)  1s infinite;
+             
+             
+  
+}
+@keyframes flicker {
+    50% {
+      color: rgb(253, 251, 251);
+      filter: saturate(200%) ;
+    }}
 
-}
-@keyframes example {
-    from {color: white;}
-    to {color: #f51f1f;}
-}
+    @keyframes flickers {
+        50% {
+          color: rgb(252, 194, 184);
+          filter: saturate(200%) ;
+        }}
 #products .container
 {
     display: grid;
    grid-template-columns:auto auto auto auto auto auto ;
     grid-gap: 10px;
-    grid-column: 0px;
+    
    
    margin-left: 80px;
   
@@ -230,12 +228,13 @@ right:80px;
     text-decoration: none;
 }
 .carousel1{
-    padding: 10px;
+    
     margin: 10px;
     background-color: transparent;
-    border-radius: 10px;
+    
  overflow: hidden;
- box-shadow:10px 10px 8px 0px  rgba(2, 2, 2, 0.89);
+ margin-top: 40px;
+ box-shadow:10px 10px 8px 0px  rgba(2, 2, 2, 0.377);
 
 }
 .carousel1:hover{
@@ -257,8 +256,7 @@ right:80px;
 {
     height: 300px;
     width: 170px;
-    padding: 10px;
-    border-radius: 100000px;
+   
 }
 #products .carousel img
 {
@@ -272,16 +270,58 @@ right:80px;
     color:yellow;
     
 }
+#main{
+    background-image: url("image/main1.jpg");
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+   
+    
+}
+#main .m{
+    padding-top: 300px;
+    background-color: #03030371;
+    height: 100%;
+}
+#main .m h1{
+    top: 200px;
+    color: rgb(253, 148, 129);     
+    display: absolute;
+    text-shadow: 
+      0 0 10px orangered,
+      0 0 10px firebrick,
+      0 0 0px maroon,
+      0 0 10px darkred;
+     
+    filter: saturate(100%);
+    animation: flickers steps(100)  1s infinite;
+     
+    font-weight: bolder;
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+    font-size: 100px;
+
+}
+#main .m h2{
+    text-align: center;
+    font-family: 'Knewave', cursive;
+    line-height: 200px;
+    color:rgb(250, 35, 35);
+    text-shadow: 0 0 10px  black,0 0 10px black,0 0 10px black,0 0 0 black; 
+}
 
 #blog{
-    background-color: rgba(0, 0, 0, 0.342); 
+    
     text-align: left;
     color:white;
     font-weight: bolder;
     font-family: cosmic,sans-serif;
     font-size: 25px;
-    margin-top: 50px;
-  padding: 10px;
+    
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
    
 
 }
@@ -293,12 +333,14 @@ right:80px;
     background-clip:text;
     color: transparent;
 }
-#blog .container2{
+ #blogs .container2{
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto;
-    grid-gap: 10px;
-   
-    padding: 50px;
+    grid-template-columns: auto auto auto auto   ;
+    grid-gap: 5px;
+ padding: 20px;
+ margin:100px;
+ width: 100%;
+    
     
 }
 #blog .card{
@@ -306,23 +348,24 @@ right:80px;
 padding: 10px;
 border-radius: 10px;
 
-
+box-shadow:10px 10px 8px 0px  rgba(2, 2, 2, 0.377);
 background-color: transparent;
-overflow: hidden;
-box-shadow:10px 10px 8px 0px  rgba(2, 2, 2, 0.89);
+
+height: 100%;
 
 
 }
-#blog .card-img-top{
-    height: auto;
+#blog .rounded-circle{
+    height: 70%;
 }
 #blog .card:hover{
     transform: translateY(-10px);
 }
-.card-text{
-font-size: 12px;
+.card-title{
+
 font-family: cosmic,sans-serif;
 font-weight: bolder;
+text-align: center;
 color: white;
 }
 .card-text span{
@@ -330,27 +373,44 @@ color: white;
     
   
 }
-
+#blog .card-img-top{
+    width: 170px;
+    height: 300px;
+    padding: 20px;
+}
 #blog h1{
-    background-image: linear-gradient(60deg,#f51f1f,#f59b9b);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip:text;
-    color: transparent;
+    color: rgb(248, 231, 77);     
+    display: block;
+    text-shadow: 
+      0 0 10px rgba(255, 123, 0, 0.979),
+      0 0 10px rgb(255, 196, 0),
+      0 0 0px orange,
+      0 0 10px darkred;
+    
+   
+    filter: saturate(100%);
+    animation: flicker steps(100)  1s infinite;
+         
     font-weight: bolder;
-    font-family: cosmic,sans-serif;
+    font-family: 'Rye', cursive;
     text-align: center;
 
 
 }
 #blog h2{
-    background-image: linear-gradient(60deg,#f51f1f,#f59b9b);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip:text;
-    color: transparent;
+    color: rgb(248, 231, 77);     
+    display: block;
+    text-shadow: 
+      0 0 12px rgba(255, 123, 0, 0.979),
+      0 0 2px rgb(255, 196, 0),
+      0 0 2px orange,
+      0 0 2px darkred;
+   
+    filter: saturate(100%);
+    animation: flicker steps(100)  1s infinite;
+        font-size: 40px; 
     font-weight: bolder;
-    font-family: cosmic,sans-serif;
+    font-family: 'ZCOOL KuaiLe', cursive;
     text-align: left;
 
 }
@@ -392,17 +452,17 @@ color: white;
 }
 .container1 form button:hover{
     color: rgb(226, 36, 36);
-    background-color: rgba(240, 218, 218, 0.74);
+    background-color: rgba(252, 212, 81, 0.966);
 }
 .container1 form input:focus{
-    background-color: #e7af83;
+    background-color: rgba(252, 212, 81, 0.966);;
     border-left:5px solid #030303;
     border-bottom: none;
     outline: none;
     box-shadow: 1px 1px 16px #030303;
 }
 .container1 form select:focus{
-    background-color: #e7af83;
+    background-color: rgba(252, 212, 81, 0.966);;
     border-left:5px solid #030303;
     border-bottom: none;
     box-shadow: 1px 1px 16px #030303;
@@ -440,15 +500,16 @@ color: white;
 }
 
 
-#product_details{
+.product_details{
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 5px;
+    overflow: hidden;
    
 }
 .prod{
     display: flex;
     
-    background-color: rgba(0, 0, 0, 0.342); 
+    
 }
 
  #productmain{
@@ -458,7 +519,7 @@ color: white;
     margin-left: 70px;
     border: 1px solid white;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     
     
 }
@@ -505,7 +566,7 @@ color: white;
     grid-gap: 10px;
     margin-top: 100px;
     
-    margin-left: 10px;
+    margin-left: 20px;
    
 }
 
@@ -521,9 +582,9 @@ color: white;
 
 .col-2{
     color:white;
-    padding: 10px;
+    padding: 40px;
    
-    margin-left: 70px;
+    margin-left: 80px;
    
     font-size: 20px;
 }
@@ -536,6 +597,136 @@ color: white;
 .col-2 a:hover{
     color: #502d13;
 }
+
+.container2{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto ;
+    grid-gap: 10px;
+ padding: 30px;
+ margin: auto;
+ width: 100%;
+    
+    
+}
+.product_details .card{
+    
+padding: 10px;
+
+margin: 5px;
+
+background-color: transparent;
+overflow: hidden;
+
+
+
+}
+.product_details.card-img-top{
+    height: auto;
+}
+.product_details .card:hover{
+    transform: translateY(-10px);
+}
+.card-text{
+font-size: 12px;
+font-family: cosmic,sans-serif;
+font-weight: bolder;
+color: white;
+}
+.card-text span{
+    color: rgb(236, 227, 227);
+    
+  
+}
+.product_details .card-img-top{
+    width: 170px;
+    height: 300px;
+    padding: 20px;
+    
+}
+
+
+
+#footer{
+    background-image: linear-gradient(60deg,rgba(184, 47, 47, 0.74),red);
+    color: white;
+    height: 45%;
+}
+   
+#shop
+{
+    background-image: url("image/shop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90%;
+   
+}
+
+
+
+.footer-box 
+{
+padding: 20px;
+
+}
+
+.footer-box .fa{
+    margin-right: 8px;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+border-radius: 2px;
+background-image: linear-gradient(60deg,rgba(184, 47, 47, 0.74),red);
+
+}
+.footer-box .form-control
+{
+
+    margin-top: 25px !important;
+    max-width: 250px;
+}
+.footer-box .btn-primary
+{
+    border: none;
+    margin-top: 30px;
+    background-image: linear-gradient(60deg,rgba(184, 47, 47, 0.74),rgb(255, 40, 40));
+}
+#footer hr{
+    background-color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.copyright
+{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width:1200px){
     .main .main_video video
     {
@@ -560,14 +751,25 @@ color: white;
        
     }
 
-#blog .container2{
+ .container2{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto ;
     grid-gap: 10px;
-   
-    padding: 5px;
+ height: 100%;
+    padding: 10px;
     border: 1px solid black;
 }
-
+.card-text{
+    font-size: 10px;
+    font-family: cosmic,sans-serif;
+    font-weight: bolder;
+    color: white;
+    
+    }
+.card-text span{
+    visibility: hidden;
+    
+  
+} 
 }
 
